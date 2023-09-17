@@ -1,0 +1,211 @@
+body {
+  padding: 0 130px;
+  width: 100%;
+  overflow-x: hidden;
+  margin: 0;
+  font-family: "Source Code Pro", monospace;
+  font-size: 14px;
+  color: #6c7279;
+  background-color: #f1f7f7;
+  -webkit-font-smoothing: antialiased;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+p {
+  margin: 0 0 10px;
+}
+
+.container {
+  width: 100%;
+  max-width: 1350px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.header {
+  width: 100%;
+  height: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+.header .inner {
+  align-items: center;
+  padding: 20px 160px;
+  display: flex;
+  justify-content: space-between;
+}
+.header .inner .logo {
+  text-align: center;
+  font-family: "Source Code Pro";
+  font-weight: 500;
+  font-size: 25px;
+  color: #5d6b6b;
+}
+.header .inner .header_contacts {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .inner .header_contacts .header_number {
+  font-size: 20px;
+  font-weight: 500;
+  color: #5d6b6b;
+}
+.header .inner .header_contacts .tg {
+  padding-left: 15px;
+  height: 25px;
+}
+.header .inner .header_contacts .wa {
+  padding-left: 15px;
+  height: 25px;
+}
+.header .inner .nav {
+  display: flex;
+}
+.header .inner .nav .nav__link {
+  position: relative;
+  padding: 8px 25px;
+  margin-left: 10px;
+  color: #5d6b6b;
+  font-size: 18px;
+  font-weight: 500;
+  transition: all 370ms cubic-bezier(0.77, 0, 0.175, 1);
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+.header .inner .nav .nav__link:before {
+  content: "";
+  position: absolute;
+  transition: inherit;
+  z-index: -1;
+}
+.header .inner .nav .nav__link:after {
+  content: "";
+  position: absolute;
+  transition: inherit;
+  z-index: -1;
+}
+.header .inner .nav .nav__link:hover {
+  color: #f1f7f7;
+  transition-delay: 0.5s;
+}
+.header .inner .nav .nav__link:hover:before {
+  transition-delay: 0s;
+}
+.header .inner .nav .nav__link:hover:after {
+  background: #5d6b6b;
+  transition-delay: 0.25s;
+}
+.header .inner .nav .nav__link:before {
+  left: 0;
+  height: 0;
+  width: 100%;
+  bottom: 0;
+  border: 2px solid #5d6b6b;
+  border-top: 0;
+  border-bottom: 0;
+}
+.header .inner .nav .nav__link:after {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+}
+.header .inner .nav .nav__link:hover {
+  color: #f1f7f7;
+  transition-delay: 0.3s;
+}
+.header .inner .nav .nav__link:hover:before {
+  height: 100%;
+}
+.header .inner .nav .nav__link:hover:after {
+  height: 100%;
+}
+.header .inner .burger {
+  display: none;
+  background: none;
+  border: 0;
+  cursor: pointer;
+  padding: 9px 2px;
+}
+.header .inner .burger .burger__item {
+  display: block;
+  width: 30px;
+  height: 3px;
+  background-color: #fff;
+  position: relative;
+}
+.header .bottom {
+  text-align: center;
+  align-content: center;
+  font-family: "Source Code Pro";
+  font-size: 29px;
+  color: white;
+  width: 382px;
+  padding: 0 20px;
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  border: solid 4px white;
+  border-radius: 10px;
+}
+.header .bottom::after {
+  position: absolute;
+  content: "";
+  top: calc(-1 * var(10px));
+  left: calc(-1 * var(10px));
+  z-index: -1;
+  width: calc(100% + var(10px) * 2);
+  height: calc(100% + var(10px) * 2);
+  background: linear-gradient(60deg, hsl(224, 85%, 66%), hsl(269, 85%, 66%), hsl(314, 85%, 66%), hsl(359, 85%, 66%), hsl(44, 85%, 66%), hsl(89, 85%, 66%), hsl(134, 85%, 66%), hsl(179, 85%, 66%));
+  background-size: 300% 300%;
+  background-position: 0 50%;
+  border-radius: calc(2 * var(10px));
+  animation: moveGradient 4s alternate infinite;
+}
+@keyframes moveGradient {
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+.intro {
+  margin-top: 80px;
+  background-color: rgba(189, 215, 216, 0.7);
+  height: 80vh;
+  width: 100%;
+  display: flex;
+}
+.intro .content {
+  overflow: hidden;
+  display: inline-block;
+  position: relative;
+}
+.intro .content .bg {
+  width: 100%;
+  min-width: 300px;
+  position: absolute;
+  z-index: 1;
+}
+.intro .content .intro_header {
+  font-family: "Source Code Pro";
+  font-weight: 500;
+  font-size: 25px;
+  color: #5d6b6b;
+  position: absolute;
+  z-index: 5;
+  padding: 0;
+}/*# sourceMappingURL=style.css.map */

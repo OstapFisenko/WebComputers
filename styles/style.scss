@@ -26,10 +26,10 @@ p {
 }
 
 .container {
+    height: 100vh;
 	width: 100%;
-	max-width: 1350px;
 	margin: 0 auto;
-	padding: 0 15px;
+	padding: 80px 0;
 }
 
 .header {
@@ -51,7 +51,7 @@ p {
             text-align: center;
 	        font-family: 'Source Code Pro';
             font-weight: 500;
-	        font-size: 25px;
+	        font-size: 2vw;
 	        color: #5d6b6b;
         }
 
@@ -61,19 +61,19 @@ p {
             align-items: center;
 
             .header_number{
-                font-size: 20px;
+                font-size: 1.2vw;
                 font-weight: 500;
                 color: #5d6b6b;
             }
 
             .tg{
                 padding-left: 15px;
-                height: 25px;
+                height: 1.5vw;
             }
 
             .wa{
                 padding-left: 15px;
-                height: 25px;
+                height: 1.5vw;
             }
         }
 
@@ -91,7 +91,7 @@ p {
                 
                 color: $bgc;
 
-                font-size: 18px;
+                font-size: 1.2vw;
                 font-weight: 500;
             
                 transition: all 370ms cubic-bezier(0.77, 0, 0.175, 1);
@@ -230,12 +230,11 @@ p {
 }
 
 .content{
-    margin-top: 80px;
     background-color: rgba($color: #bdd7d8, $alpha: 0.3);
     background-size: cover;
     background-position: center;
     
-    height: 80vh;
+    height: 100%;
     width: 100%;
 
 
@@ -248,7 +247,8 @@ p {
         position: relative;
         
         .pc{
-            margin: 70px auto auto -50px;
+            top: 20%;
+            left: -5%;
             position: absolute;
             background-size:contain;
             background-size: 60%;
@@ -265,47 +265,50 @@ p {
             position: absolute;
             .bg_circle{
                 clip-path: circle(50% at 50% 50%);
-                background: #E2F0F0;
+                background: rgba($color: #f1f7f7, $alpha: 0.5);
                 position: absolute;
             }
     
             .circle1{
                 height: 300px;
                 width: 300px;
-                margin: 20px auto auto 100px;
+                top: 7%;
+                left: 7%;
             }
             
             .circle2{
-                margin: 100px auto auto -200px;
-                width: 700px;
-                height: 700px;
+                top: 25%;
+                left: -10%;
+                width: 750px;
+                height: 750px;
             }
     
             .circle3{
-                
-                width: 100px;
-                height: 100px;
+                top: 35%;
+                left: 21%;
+                width: 570px;
+                height: 570px;
                 
             }
         }
         
         .intro_title{
-            margin: 40px 80px auto auto;
+            margin: 9vw 5vw auto auto;
             text-align: end;
-            max-width: 700px;
+            max-width: 40vw;
             font-family: 'Source Code Pro';
             font-weight: 500;
-	        font-size: 70px;
+	        font-size: 5vw;
 	        color: #5d6b6b;
         }
 
         .intro_text{
             margin: 80px 80px 30px auto;
             text-align: end;
-            max-width: 500px;
+            max-width: 30%;
             font-family: 'Source Code Pro';
             font-weight: 500;
-	        font-size: 30px;
+	        font-size: 1.8vw;
 	        color: #5d6b6b;
         }
     }

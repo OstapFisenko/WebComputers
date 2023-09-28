@@ -6,7 +6,6 @@ body {
 	font-size: 14px;
 	color: #6c7279;
 	background-color: #f1f7f7;
-    overflow-y: visible;
 	-webkit-font-smoothing: antialiased;
     overflow: hidden;
     
@@ -195,6 +194,7 @@ p {
     width: 100%;
     max-height: 800px;
     margin: auto ;
+    overflow-y: scroll;
 
 
     display: flex;

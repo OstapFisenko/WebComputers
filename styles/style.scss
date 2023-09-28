@@ -1,7 +1,6 @@
 body {
     padding: 0 130px;
 	width: 100%;
-	overflow-x: hidden;
 	margin: 0;
 	font-family: 'Source Code Pro', monospace;
 	font-size: 14px;
@@ -9,6 +8,7 @@ body {
 	background-color: #f1f7f7;
     overflow-y: visible;
 	-webkit-font-smoothing: antialiased;
+    overflow: hidden;
     
 }
 
@@ -28,8 +28,10 @@ p {
 .container {
     height: 100vh;
 	width: 100%;
-	margin: 0 auto;
-	padding: 80px 0;
+    max-width: 1400px;
+	margin: auto;
+	padding: 65px 0;
+    display: flex;
 }
 
 .header {
@@ -40,18 +42,22 @@ p {
 	top: 0;
 	left: 0;
 	z-index: 1000;
+    justify-content: center;
 
     .inner{
         align-items: center;
-	    padding: 20px 160px;
+	    padding: 15px 160px;
 	    display: flex;
+        max-width: 1650px;
+        margin-left: auto;
+        margin-right: auto;
 	    justify-content: space-between;
 
         .logo{
             text-align: center;
 	        font-family: 'Source Code Pro';
-            font-weight: 500;
-	        font-size: 2vw;
+            font-weight: 600;
+	        font-size: 22px;
 	        color: #5d6b6b;
         }
 
@@ -61,7 +67,7 @@ p {
             align-items: center;
 
             .header_number{
-                font-size: 1.2vw;
+                font-size: 19px;
                 font-weight: 500;
                 color: #5d6b6b;
             }
@@ -91,7 +97,7 @@ p {
                 
                 color: $bgc;
 
-                font-size: 1.2vw;
+                font-size: 15px;
                 font-weight: 500;
             
                 transition: all 370ms cubic-bezier(0.77, 0, 0.175, 1);
@@ -178,55 +184,6 @@ p {
             }
         }
     }
-    .bottom{
-        $bw: 10px;
-        text-align: center;
-        align-content: center;
-
-        font-family: 'Source Code Pro';
-        font-size: 29px;
-        color: white;
-        
-        width: 382px;
-        padding: 0 20px;
-
-        display: flex;
-        position: relative;
-        justify-content: space-between;
-        border: solid 4px white;
-        border-radius: $bw;
-
-        &::after {
-            position: absolute;
-            content: "";
-            top: calc(-1 * var($bw));
-            left: calc(-1 * var($bw));
-            z-index: -1;
-            width: calc(100% + var($bw) * 2);
-            height: calc(100% + var($bw) * 2);
-            background: linear-gradient(
-              60deg,
-              hsl(224, 85%, 66%),
-              hsl(269, 85%, 66%),
-              hsl(314, 85%, 66%),
-              hsl(359, 85%, 66%),
-              hsl(44, 85%, 66%),
-              hsl(89, 85%, 66%),
-              hsl(134, 85%, 66%),
-              hsl(179, 85%, 66%)
-            );
-            background-size: 300% 300%;
-            background-position: 0 50%;
-            border-radius: calc(2 * var($bw));
-            animation: moveGradient 4s alternate infinite;
-        }
-
-        @keyframes moveGradient {
-            50% {
-              background-position: 100% 50%;
-            }
-        }
-    }
 }
 
 .content{
@@ -236,6 +193,8 @@ p {
     
     height: 100%;
     width: 100%;
+    max-height: 800px;
+    margin: auto ;
 
 
     display: flex;
@@ -247,7 +206,7 @@ p {
         position: relative;
         
         .pc{
-            top: 20%;
+            top: 10vh;
             left: -5%;
             position: absolute;
             background-size:contain;
@@ -269,46 +228,26 @@ p {
                 position: absolute;
             }
     
-            .circle1{
-                height: 300px;
-                width: 300px;
-                top: 7%;
-                left: 7%;
-            }
             
-            .circle2{
-                top: 25%;
-                left: -10%;
-                width: 750px;
-                height: 750px;
-            }
-    
-            .circle3{
-                top: 35%;
-                left: 21%;
-                width: 570px;
-                height: 570px;
-                
-            }
         }
         
         .intro_title{
-            margin: 9vw 5vw auto auto;
+            margin: 150px 80px auto auto;
             text-align: end;
-            max-width: 40vw;
             font-family: 'Source Code Pro';
             font-weight: 500;
-	        font-size: 5vw;
+	        font-size: 45px;
 	        color: #5d6b6b;
         }
 
         .intro_text{
-            margin: 80px 80px 30px auto;
+            margin: 100px 80px 30px auto;
             text-align: end;
-            max-width: 30%;
+            max-width: 25%;
             font-family: 'Source Code Pro';
             font-weight: 500;
-	        font-size: 1.8vw;
+	        font-size: 20px;
+            line-height: 200%;
 	        color: #5d6b6b;
         }
     }

@@ -50,7 +50,10 @@ p {
         max-width: 1650px;
         margin-left: auto;
         margin-right: auto;
+        margin-top: auto;
+        margin-bottom: 0;
 	    justify-content: space-between;
+        height: 100%;
 
         .logo{
             text-align: center;
@@ -194,9 +197,12 @@ p {
     width: 100%;
     max-height: 720px;
     margin: auto ;
+<<<<<<< HEAD
     justify-content: center;
     overflow: visible;
     position: relative;
+=======
+>>>>>>> 369532490c0da18b5e14a6d792db9e37956d42a5
 
 
     display: flex;
@@ -211,6 +217,7 @@ p {
         left: -5%;
         overflow-y: scroll;
         
+<<<<<<< HEAD
         .intro{
             position: relative;
             width: 100%;
@@ -251,6 +258,21 @@ p {
                     color: #5d6b6b;
                 }
             }
+=======
+        .pc{
+            top: 10%;
+            left: -5%;
+            position: absolute;
+            background-size:contain;
+            background-size: 60%;
+            background-repeat: no-repeat;
+            height: 400px;
+            width: 100%;
+            z-index: 100;
+            margin-top: auto;
+            margin-bottom: 0;
+            display: flex;
+>>>>>>> 369532490c0da18b5e14a6d792db9e37956d42a5
         }
 
         .video{

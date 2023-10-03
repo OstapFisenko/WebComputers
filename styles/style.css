@@ -3,7 +3,7 @@ body {
   width: 100%;
   margin: 0;
   font-family: "Source Code Pro", monospace;
-  font-size: 14px;
+  font-size: 16px;
   color: #6c7279;
   background-color: #f1f7f7;
   -webkit-font-smoothing: antialiased;
@@ -171,9 +171,7 @@ p {
 .content .scroll {
   width: 105%;
   position: absolute;
-  max-width: 1400px;
-  max-height: 720px;
-  height: 103%;
+  height: 100vh;
   left: -5%;
   overflow-y: scroll;
 }
@@ -219,16 +217,23 @@ p {
   position: relative;
   width: 100%;
   height: 100%;
+  display: flex;
+  overflow: hidden;
 }
 .content .scroll .video .vdcard {
-  top: 80px;
+  top: 150px;
   position: absolute;
   background-size: contain;
-  background-size: 55%;
+  background-size: 50%;
   background-repeat: no-repeat;
   height: 100%;
+  max-height: 700px;
   width: 100%;
   z-index: 100;
+}
+.content .scroll .video .text {
+  width: 100%;
+  height: 100%;
 }
 .content .scroll .video .text .video_title {
   margin: 150px 80px auto auto;
@@ -239,12 +244,35 @@ p {
   color: #5d6b6b;
 }
 .content .scroll .video .text .video_text {
-  margin: 100px 80px 30px auto;
-  text-align: end;
-  max-width: 25%;
+  margin: 20px 50px 30px auto;
+  width: 42%;
+  height: auto;
+}
+.content .scroll .video .text .video_text .line {
+  padding-top: 30px;
+  padding-bottom: 10px;
+  justify-content: space-between;
+  display: flex;
+}
+.content .scroll .video .text .video_text .line .column {
+  width: 50%;
   font-family: "Source Code Pro";
   font-weight: 500;
-  font-size: 20px;
-  line-height: 200%;
-  color: #5d6b6b;
+  font-size: 30px;
+  text-align: end;
+}
+.content .scroll .video .text .video_text .line .price {
+  padding-left: 30px;
+  text-align: center;
+}
+.content .scroll .video .text .video_text .description {
+  text-align: center;
+  letter-spacing: -0.5px;
+}
+.content .scroll .video .text .video_text .border {
+  width: 100%;
+  height: auto;
+  border: 2px solid #5d6b6b;
+  border-radius: 60px;
+  display: none;
 }/*# sourceMappingURL=style.css.map */

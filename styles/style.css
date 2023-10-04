@@ -282,4 +282,15 @@ p {
   max-height: 700px;
   width: 100%;
   z-index: 100;
+}
+.content .scroll .computer {
+  top: 80px;
+  position: absolute;
+  background-size: contain;
+  background-size: 37%;
+  background-repeat: no-repeat;
+  height: 100%;
+  max-height: 700px;
+  width: 100%;
+  z-index: 100;
 }/*# sourceMappingURL=style.css.map */

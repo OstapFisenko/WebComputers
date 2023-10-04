@@ -1,9 +1,9 @@
 body {
-  padding: 0 130px;
+  padding: 0;
   width: 100%;
   margin: 0;
   font-family: "Source Code Pro", monospace;
-  font-size: 16px;
+  font-size: 2vh;
   color: #6c7279;
   background-color: #f1f7f7;
   -webkit-font-smoothing: antialiased;
@@ -27,9 +27,8 @@ p {
 .main-article {
   height: 100vh;
   width: 100%;
-  max-width: 1400px;
   margin: auto;
-  padding: 10vh 0;
+  padding: 10vh 7.5vw;
   display: flex;
 }
 
@@ -184,7 +183,7 @@ p {
   display: flex;
 }
 .content .scroll .intro .pc {
-  top: 80px;
+  top: 8vh;
   position: absolute;
   background-size: contain;
   background-size: 55%;
@@ -194,62 +193,61 @@ p {
   z-index: 100;
 }
 .content .scroll .intro .intro_title {
-  margin: 150px 80px auto auto;
+  margin: 20vh 6vw auto auto;
   text-align: end;
   font-family: "Source Code Pro";
   font-weight: 500;
-  font-size: 45px;
+  font-size: 6vh;
   color: #5d6b6b;
 }
 .content .scroll .intro .intro_text {
-  margin: 100px 80px 30px auto;
+  margin: 11vh 6vw auto auto;
   text-align: end;
   max-width: 25%;
   font-family: "Source Code Pro";
   font-weight: 500;
-  font-size: 20px;
+  font-size: 3vh;
   line-height: 200%;
   color: #5d6b6b;
 }
-.content .scroll .text {
+.content .scroll .text_content {
   width: 100%;
   height: 100%;
 }
-.content .scroll .text .title {
-  margin: 130px 80px auto auto;
+.content .scroll .text_content .title {
+  margin: 14vh 6vw auto auto;
   text-align: end;
   font-family: "Source Code Pro";
   font-weight: 500;
-  font-size: 45px;
+  font-size: 6vh;
   color: #5d6b6b;
 }
-.content .scroll .text .text {
-  margin: 20px 50px 30px auto;
+.content .scroll .text_content .text {
+  margin: 2vh 5vw auto auto;
   width: 42%;
   height: auto;
 }
-.content .scroll .text .text .line {
-  padding-top: 30px;
-  padding-bottom: 10px;
+.content .scroll .text_content .text .line {
+  padding-top: 3vh;
+  padding-bottom: 1vh;
   justify-content: space-between;
   display: flex;
 }
-.content .scroll .text .text .line .column {
+.content .scroll .text_content .text .line .column {
   width: 50%;
   font-family: "Source Code Pro";
   font-weight: 500;
-  font-size: 30px;
+  font-size: 4vh;
   text-align: end;
 }
-.content .scroll .text .text .line .price {
-  padding-left: 30px;
+.content .scroll .text_content .text .line .price {
+  padding-left: 3.5vw;
   text-align: center;
 }
-.content .scroll .text .text .description {
-  text-align: center;
-  letter-spacing: -0.5px;
+.content .scroll .text_content .text .description {
+  text-align: end;
 }
-.content .scroll .text .text .border {
+.content .scroll .text_content .text .border {
   width: 100%;
   height: auto;
   border: 2px solid #5d6b6b;
@@ -270,7 +268,6 @@ p {
   background-size: 50%;
   background-repeat: no-repeat;
   height: 100%;
-  max-height: 700px;
   width: 100%;
   z-index: 100;
 }
@@ -281,7 +278,6 @@ p {
   background-size: 50%;
   background-repeat: no-repeat;
   height: 100%;
-  max-height: 700px;
   width: 100%;
   z-index: 100;
 }
@@ -292,7 +288,6 @@ p {
   background-size: 37%;
   background-repeat: no-repeat;
   height: 100%;
-  max-height: 700px;
   width: 100%;
   z-index: 100;
 }/*# sourceMappingURL=style.css.map */

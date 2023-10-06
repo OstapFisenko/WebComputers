@@ -201,142 +201,216 @@ p {
 
     display: flex;
     
-    
-    .scroll{
-        width: 105%;
-        position: absolute;
-        height: 100vh;
-        left: -5%;
-        
-        overflow-y: scroll;
-        .intro{
-            position: relative;
+    .wrapper{
+        width: 100%;
+        height: 100%;
+        .contents{
             width: 100%;
             height: 100%;
-            display: flex;
 
-            .pc{
-                top: 8vh;
+            .scroll{
+                width: 105%;
                 position: absolute;
-                background-size:contain;
-                background-size: 55%;
-                background-repeat: no-repeat;
-                height: 100%;
-                width: 100%;
-                z-index: 100;
-            }
-            
-            .intro_title{
-                margin: 20vh 6vw auto auto;
-                text-align: end;
-                font-family: 'Source Code Pro';
-                font-weight: 500;
-                font-size: 6vh;
-                color: #5d6b6b;
-            }
-    
-            .intro_text{
-                margin: 11vh 6vw auto auto;
-                text-align: end;
-                max-width: 25%;
-                font-family: 'Source Code Pro';
-                font-weight: 500;
-                font-size: 3vh;
-                line-height: 200%;
-                color: #5d6b6b;
-            }
-        }
-        .text_content{
-            width: 100%;
-            height: 100%;
-            .title{
-                margin: 14vh 6vw auto auto;
-                text-align: end;
-                font-family: 'Source Code Pro';
-                font-weight: 500;
-                font-size: 6vh;
-                color: #5d6b6b;
-            }
-    
-            .text{
-                margin: 2vh 5vw auto auto;
-                width: 42%;
-                height: auto;
-                .line{
-                    padding-top: 3vh;
-                    padding-bottom: 1vh;
-
-                    justify-content: space-between;
+                height: 100vh;
+                left: -5%;
+                
+                overflow-y: scroll;
+                .intro{
+                    position: relative;
+                    width: 100%;
+                    height: 100%;
                     display: flex;
-
+        
+                    .pc{
+                        top: 8vh;
+                        position: absolute;
+                        background-size:contain;
+                        background-size: 55%;
+                        background-repeat: no-repeat;
+                        height: 100%;
+                        width: 100%;
+                        z-index: 100;
+                    }
+        
+                    .pc1{
+                        transform: translate3d(0, calc(var(--scrollTop) * -1),0);
+                    }
+        
+                    .pc2{
+                        transform: translate3d(0, calc(var(--scrollTop) * 2),0);
+                    }
+                    .pc3{
+                        transform: translate3d(0, calc(var(--scrollTop) * -1),0);
+                    }
+                    .pc4{
+                        transform: translate3d(0, calc(var(--scrollTop) * -1),0);
+                    }
+                    .pc5{
+                        transform: translate3d(0, calc(var(--scrollTop) * -1),0);
+                    }
+        
+                    .pc6{
+                        transform: translate3d(0, calc(var(--scrollTop) * -1),0);
+                    }
+        
+                    .pc7{
+                        transform: translate3d(0, calc(var(--scrollTop) * -1),0);
+                    }
+                    .pc8{
+                        transform: translate3d(0, calc(var(--scrollTop) * -1),0);
+                    }
+                    .pc9{
+                        transform: translate3d(0, calc(var(--scrollTop) * -1),0);
+                    }
+                    .pc10{
+                        transform: translate3d(0, calc(var(--scrollTop) * -1),0);
+                    }
+                    .pc11{
+                        transform: translate3d(0, calc(var(--scrollTop) * -1),0);
+                    }
+        
+                    .pc12{
+                        transform: translate3d(0, calc(var(--scrollTop) * -1),0);
+                    }
+                    .pc13{
+                        transform: translate3d(0, calc(var(--scrollTop) * -1),0);
+                    }
+                    .pc14{
+                        transform: translate3d(0, calc(var(--scrollTop) * -1),0);
+                    }
+                    .pc15{
+                        transform: translate3d(0, calc(var(--scrollTop) * -1),0);
+                    }
+                    .pc16{
+                        transform: translate3d(0, calc(var(--scrollTop) * -1),0);
+                    }
+        
+                    .pc17{
+                        transform: translate3d(0, calc(var(--scrollTop) * -1),0);
+                    }
+                    .pc18{
+                        transform: translate3d(0, calc(var(--scrollTop) * -1),0);
+                    }
+                    .pc19{
+                        transform: translate3d(0, calc(var(--scrollTop) * -1),0);
+                    }
+                    .pc20{
+                        transform: translate3d(0, calc(var(--scrollTop) * -1),0);
+                    }
                     
-                    .column{
-                        width: 50%;
+                    .intro_title{
+                        margin: 20vh 6vw auto auto;
+                        text-align: end;
                         font-family: 'Source Code Pro';
                         font-weight: 500;
-                        font-size: 4vh;
+                        font-size: 6vh;
+                        color: #5d6b6b;
+                    }
+            
+                    .intro_text{
+                        margin: 11vh 6vw auto auto;
                         text-align: end;
+                        max-width: 25%;
+                        font-family: 'Source Code Pro';
+                        font-weight: 500;
+                        font-size: 3vh;
+                        line-height: 200%;
+                        color: #5d6b6b;
                     }
-
-                    .price{
-                        padding-left: 3.5vw;
-                        text-align: center;
-                    }
-
-                    
                 }
-                .description{
-                    text-align: end;
-                }
-                .border{
+                .text_content{
                     width: 100%;
-                    height: auto;
-                    border: 2px solid #5d6b6b;
-                    border-radius: 60px;
-                    display: none;
+                    height: 100%;
+                    .title{
+                        margin: 14vh 6vw auto auto;
+                        text-align: end;
+                        font-family: 'Source Code Pro';
+                        font-weight: 500;
+                        font-size: 6vh;
+                        color: #5d6b6b;
+                    }
+            
+                    .text{
+                        margin: 2vh 5vw auto auto;
+                        width: 42%;
+                        height: auto;
+                        .line{
+                            padding-top: 3vh;
+                            padding-bottom: 1vh;
+        
+                            justify-content: space-between;
+                            display: flex;
+        
+                            
+                            .column{
+                                width: 50%;
+                                font-family: 'Source Code Pro';
+                                font-weight: 500;
+                                font-size: 4vh;
+                                text-align: end;
+                            }
+        
+                            .price{
+                                padding-left: 3.5vw;
+                                text-align: center;
+                            }
+        
+                            
+                        }
+                        .description{
+                            text-align: end;
+                        }
+                        .border{
+                            width: 100%;
+                            height: auto;
+                            border: 2px solid #5d6b6b;
+                            border-radius: 60px;
+                            display: none;
+                        }
+                    }
+                }
+        
+                .container{
+                    position: relative;
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    overflow: hidden;
+                }
+        
+                .vdcard{
+                    top: 150px;
+                    position: absolute;
+                    background-size:contain;
+                    background-size: 50%;
+                    background-repeat: no-repeat;
+                    height: 100%;
+                    width: 100%;
+                    z-index: 100;
+                }
+        
+                .laptop{
+                    top: 190px;
+                    position: absolute;
+                    background-size:contain;
+                    background-size: 50%;
+                    background-repeat: no-repeat;
+                    height: 100%;
+                    width: 100%;
+                    z-index: 100;
+                }
+        
+                .computer{
+                    top: 80px;
+                    position: absolute;
+                    background-size:contain;
+                    background-size: 37%;
+                    background-repeat: no-repeat;
+                    height: 100%;
+                    width: 100%;
+                    z-index: 100;
                 }
             }
-        }
-
-        .container{
-            position: relative;
-            width: 100%;
-            height: 100%;
-            display: flex;
-            overflow: hidden;
-        }
-
-        .vdcard{
-            top: 150px;
-            position: absolute;
-            background-size:contain;
-            background-size: 50%;
-            background-repeat: no-repeat;
-            height: 100%;
-            width: 100%;
-            z-index: 100;
-        }
-
-        .laptop{
-            top: 190px;
-            position: absolute;
-            background-size:contain;
-            background-size: 50%;
-            background-repeat: no-repeat;
-            height: 100%;
-            width: 100%;
-            z-index: 100;
-        }
-
-        .computer{
-            top: 80px;
-            position: absolute;
-            background-size:contain;
-            background-size: 37%;
-            background-repeat: no-repeat;
-            height: 100%;
-            width: 100%;
-            z-index: 100;
         }
     }
 }

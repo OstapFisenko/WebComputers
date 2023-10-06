@@ -8,6 +8,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;500;600&display=swap" rel="stylesheet">
+    <script src="libs/gsap/gsap.min.js" defer></script>
+    <script src="libs/gsap/ScrollSmoother.min.js" defer></script>
+    <script src="libs/gsap/ScrollTrigger.min.js" defer></script>
+    <script src="scripts/app.js" defer></script>
     <title>Tech Secret</title>
 </head>
 <body>
@@ -37,168 +41,192 @@
     </header>
     <article class="main-article" id="main">
       <div class="content" style="background-image: url(./img/bg.png)">
-        <div class="scroll">
-          <div class="intro">
-            <div class="pc" style="background-image: url(./img/pc.png)"></div>
-            <div class="text_content">
-              <div class="intro_title">
-                Компьютерный сервис
-              </div>
-              <div class="intro_text">
-                Обслуживание. Ремонт. Апгрейд. Диагностика.
-              </div>
-            </div>
-          </div>
-          <div class="container" id="videocards">
-            <div class="vdcard" style="background-image: url(./img/videocard.png)"></div>
-            <div class="text_content">
-              <div class="title">
-                Видеокарты
-              </div>
-              <div class="text">
-                <div class="line">
-                  <div class="column name">
-                    Ремонт
-                  </div>
-                  <div class="column price">
-                    от 2000 руб.
-                  </div>
-                </div>
-                <div class="border"></div>
-                <div class="line">
-                  <div class="column name">
-                    Обслуживание
-                  </div>
-                  <div class="column price">
-                    от 1500 руб.
-                  </div>
-                </div>
-                <div class="border"></div>
-                <div class="line">
-                  <div class="column name">
-                    Диагностика
-                  </div>
-                  <div class="column price">
-                    Бесплатно
-                  </div>
-                </div>
-                <div class="description">
-                  1000 руб. в случае отказа или нецелесообразности ремонта
-                </div>
-                <div class="border"></div>
-                <div class="line">
-                  <div class="column name">
-                    Мелкий ремонт
-                  </div>
-                  <div class="column price">
-                    от 1000 руб.
-                  </div>
-                </div>
-              </div>
-              <div class="price_button">
+        <div class="wrapper">
+          <div class="contents">
+            <div class="scroll">
+              <div class="intro">
+                <div class="pc pc1" style="background-image: url(img/pc/pc1.png)"></div>
+                <div class="pc pc2" style="background-image: url(img/pc/pc2.png)"></div>
+                <div class="pc pc3" style="background-image: url(img/pc/pc3.png)"></div>
+                <div class="pc pc4" style="background-image: url(img/pc/pc4.png)"></div>
+                <div class="pc pc5" style="background-image: url(img/pc/pc5.png)"></div>
+                <div class="pc pc6" style="background-image: url(img/pc/pc6.png)"></div>
+                <div class="pc pc7" style="background-image: url(img/pc/pc7.png)"></div>
+                <div class="pc pc8" style="background-image: url(img/pc/pc8.png)"></div>
+                <div class="pc pc9" style="background-image: url(img/pc/pc9.png)"></div>
+                <div class="pc pc10" style="background-image: url(img/pc/pc10.png)"></div>
+                <div class="pc pc11" style="background-image: url(img/pc/pc11.png)"></div>
+                <div class="pc pc12" style="background-image: url(img/pc/pc12.png)"></div>
+                <div class="pc pc13" style="background-image: url(img/pc/pc13.png)"></div>
+                <div class="pc pc14" style="background-image: url(img/pc/pc14.png)"></div>
+                <div class="pc pc15" style="background-image: url(img/pc/pc15.png)"></div>
+                <div class="pc pc16" style="background-image: url(img/pc/pc16.png)"></div>
+                <div class="pc pc17" style="background-image: url(img/pc/pc17.png)"></div>
+                <div class="pc pc18" style="background-image: url(img/pc/pc18.png)"></div>
+                <div class="pc pc19" style="background-image: url(img/pc/pc19.png)"></div>
+                <div class="pc pc20" style="background-image: url(img/pc/pc20.png)"></div>
                 
-              </div>
-            </div>
-          </div>
-          <div class="container">
-            <div class="laptop" style="background-image: url(./img/laptop.png)"></div>
-            <div class="text_content">
-              <div class="title">
-                Ноутбуки
-              </div>
-              <div class="text">
-                <div class="line">
-                  <div class="column name">
-                    Ремонт
+                <div class="text_content">
+                  <div class="intro_title">
+                    Компьютерный сервис
                   </div>
-                  <div class="column price">
-                    от 2000 руб.
-                  </div>
-                </div>
-                <div class="border"></div>
-                <div class="line">
-                  <div class="column name">
-                    Обслуживание
-                  </div>
-                  <div class="column price">
-                    от 1500 руб.
-                  </div>
-                </div>
-                <div class="border"></div>
-                <div class="line">
-                  <div class="column name">
-                    Диагностика
-                  </div>
-                  <div class="column price">
-                    Бесплатно
-                  </div>
-                </div>
-                <div class="description">
-                  1000 руб. в случае отказа или нецелесообразности ремонта
-                </div>
-                <div class="border"></div>
-                <div class="line">
-                  <div class="column name">
-                    Мелкий ремонт
-                  </div>
-                  <div class="column price">
-                    от 1000 руб.
+                  <div class="intro_text">
+                    Обслуживание. Ремонт. Апгрейд. Диагностика.
                   </div>
                 </div>
               </div>
-              <div class="price_button">
-                
+              <div class="container" id="videocards">
+                <div class="vdcard" style="background-image: url(./img/videocard.png)"></div>
+                <div class="text_content">
+                  <div class="title">
+                    Видеокарты
+                  </div>
+                  <div class="text">
+                    <div class="line">
+                      <div class="column name">
+                        Ремонт
+                      </div>
+                      <div class="column price">
+                        от 2000 руб.
+                      </div>
+                    </div>
+                    <div class="border"></div>
+                    <div class="line">
+                      <div class="column name">
+                        Обслуживание
+                      </div>
+                      <div class="column price">
+                        от 1500 руб.
+                      </div>
+                    </div>
+                    <div class="border"></div>
+                    <div class="line">
+                      <div class="column name">
+                        Диагностика
+                      </div>
+                      <div class="column price">
+                        Бесплатно
+                      </div>
+                    </div>
+                    <div class="description">
+                      1000 руб. в случае отказа или нецелесообразности ремонта
+                    </div>
+                    <div class="border"></div>
+                    <div class="line">
+                      <div class="column name">
+                        Мелкий ремонт
+                      </div>
+                      <div class="column price">
+                        от 1000 руб.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="price_button">
+                    
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
-          <div class="container">
-            <div class="computer" style="background-image: url(./img/custom-pc.png)"></div>
-            <div class="text_content">
-              <div class="title">
-                Компьютеры
+              <div class="container">
+                <div class="laptop" style="background-image: url(./img/laptop.png)"></div>
+                <div class="text_content">
+                  <div class="title">
+                    Ноутбуки
+                  </div>
+                  <div class="text">
+                    <div class="line">
+                      <div class="column name">
+                        Ремонт
+                      </div>
+                      <div class="column price">
+                        от 2000 руб.
+                      </div>
+                    </div>
+                    <div class="border"></div>
+                    <div class="line">
+                      <div class="column name">
+                        Обслуживание
+                      </div>
+                      <div class="column price">
+                        от 1500 руб.
+                      </div>
+                    </div>
+                    <div class="border"></div>
+                    <div class="line">
+                      <div class="column name">
+                        Диагностика
+                      </div>
+                      <div class="column price">
+                        Бесплатно
+                      </div>
+                    </div>
+                    <div class="description">
+                      1000 руб. в случае отказа или нецелесообразности ремонта
+                    </div>
+                    <div class="border"></div>
+                    <div class="line">
+                      <div class="column name">
+                        Мелкий ремонт
+                      </div>
+                      <div class="column price">
+                        от 1000 руб.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="price_button">
+                    
+                  </div>
+                </div>
               </div>
-              <div class="text">
-                <div class="line">
-                  <div class="column name">
-                    Ремонт
+              <div class="container">
+                <div class="computer" style="background-image: url(./img/custom-pc.png)"></div>
+                <div class="text_content">
+                  <div class="title">
+                    Компьютеры
                   </div>
-                  <div class="column price">
-                    от 2000 руб.
+                  <div class="text">
+                    <div class="line">
+                      <div class="column name">
+                        Ремонт
+                      </div>
+                      <div class="column price">
+                        от 2000 руб.
+                      </div>
+                    </div>
+                    <div class="border"></div>
+                    <div class="line">
+                      <div class="column name">
+                        Обслуживание
+                      </div>
+                      <div class="column price">
+                        от 1500 руб.
+                      </div>
+                    </div>
+                    <div class="border"></div>
+                    <div class="line">
+                      <div class="column name">
+                        Диагностика
+                      </div>
+                      <div class="column price">
+                        Бесплатно
+                      </div>
+                    </div>
+                    <div class="description">
+                      1000 руб. в случае отказа или нецелесообразности ремонта
+                    </div>
+                    <div class="border"></div>
+                    <div class="line">
+                      <div class="column name">
+                        Мелкий ремонт
+                      </div>
+                      <div class="column price">
+                        от 1000 руб.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="price_button">
+                    
                   </div>
                 </div>
-                <div class="border"></div>
-                <div class="line">
-                  <div class="column name">
-                    Обслуживание
-                  </div>
-                  <div class="column price">
-                    от 1500 руб.
-                  </div>
-                </div>
-                <div class="border"></div>
-                <div class="line">
-                  <div class="column name">
-                    Диагностика
-                  </div>
-                  <div class="column price">
-                    Бесплатно
-                  </div>
-                </div>
-                <div class="description">
-                  1000 руб. в случае отказа или нецелесообразности ремонта
-                </div>
-                <div class="border"></div>
-                <div class="line">
-                  <div class="column name">
-                    Мелкий ремонт
-                  </div>
-                  <div class="column price">
-                    от 1000 руб.
-                  </div>
-                </div>
-              </div>
-              <div class="price_button">
-                
               </div>
             </div>
           </div>

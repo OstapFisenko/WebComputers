@@ -169,20 +169,28 @@ p {
   position: relative;
   display: flex;
 }
-.content .scroll {
+.content .wrapper {
+  width: 100%;
+  height: 100%;
+}
+.content .wrapper .contents {
+  width: 100%;
+  height: 100%;
+}
+.content .wrapper .contents .scroll {
   width: 105%;
   position: absolute;
   height: 100vh;
   left: -5%;
   overflow-y: scroll;
 }
-.content .scroll .intro {
+.content .wrapper .contents .scroll .intro {
   position: relative;
   width: 100%;
   height: 100%;
   display: flex;
 }
-.content .scroll .intro .pc {
+.content .wrapper .contents .scroll .intro .pc {
   top: 8vh;
   position: absolute;
   background-size: contain;
@@ -192,7 +200,67 @@ p {
   width: 100%;
   z-index: 100;
 }
-.content .scroll .intro .intro_title {
+.content .wrapper .contents .scroll .intro .pc1 {
+  transform: translate3d(0, calc(var(--scrollTop) * -1), 0);
+}
+.content .wrapper .contents .scroll .intro .pc2 {
+  transform: translate3d(0, calc(var(--scrollTop) * 2), 0);
+}
+.content .wrapper .contents .scroll .intro .pc3 {
+  transform: translate3d(0, calc(var(--scrollTop) * -1), 0);
+}
+.content .wrapper .contents .scroll .intro .pc4 {
+  transform: translate3d(0, calc(var(--scrollTop) * -1), 0);
+}
+.content .wrapper .contents .scroll .intro .pc5 {
+  transform: translate3d(0, calc(var(--scrollTop) * -1), 0);
+}
+.content .wrapper .contents .scroll .intro .pc6 {
+  transform: translate3d(0, calc(var(--scrollTop) * -1), 0);
+}
+.content .wrapper .contents .scroll .intro .pc7 {
+  transform: translate3d(0, calc(var(--scrollTop) * -1), 0);
+}
+.content .wrapper .contents .scroll .intro .pc8 {
+  transform: translate3d(0, calc(var(--scrollTop) * -1), 0);
+}
+.content .wrapper .contents .scroll .intro .pc9 {
+  transform: translate3d(0, calc(var(--scrollTop) * -1), 0);
+}
+.content .wrapper .contents .scroll .intro .pc10 {
+  transform: translate3d(0, calc(var(--scrollTop) * -1), 0);
+}
+.content .wrapper .contents .scroll .intro .pc11 {
+  transform: translate3d(0, calc(var(--scrollTop) * -1), 0);
+}
+.content .wrapper .contents .scroll .intro .pc12 {
+  transform: translate3d(0, calc(var(--scrollTop) * -1), 0);
+}
+.content .wrapper .contents .scroll .intro .pc13 {
+  transform: translate3d(0, calc(var(--scrollTop) * -1), 0);
+}
+.content .wrapper .contents .scroll .intro .pc14 {
+  transform: translate3d(0, calc(var(--scrollTop) * -1), 0);
+}
+.content .wrapper .contents .scroll .intro .pc15 {
+  transform: translate3d(0, calc(var(--scrollTop) * -1), 0);
+}
+.content .wrapper .contents .scroll .intro .pc16 {
+  transform: translate3d(0, calc(var(--scrollTop) * -1), 0);
+}
+.content .wrapper .contents .scroll .intro .pc17 {
+  transform: translate3d(0, calc(var(--scrollTop) * -1), 0);
+}
+.content .wrapper .contents .scroll .intro .pc18 {
+  transform: translate3d(0, calc(var(--scrollTop) * -1), 0);
+}
+.content .wrapper .contents .scroll .intro .pc19 {
+  transform: translate3d(0, calc(var(--scrollTop) * -1), 0);
+}
+.content .wrapper .contents .scroll .intro .pc20 {
+  transform: translate3d(0, calc(var(--scrollTop) * -1), 0);
+}
+.content .wrapper .contents .scroll .intro .intro_title {
   margin: 20vh 6vw auto auto;
   text-align: end;
   font-family: "Source Code Pro";
@@ -200,7 +268,7 @@ p {
   font-size: 6vh;
   color: #5d6b6b;
 }
-.content .scroll .intro .intro_text {
+.content .wrapper .contents .scroll .intro .intro_text {
   margin: 11vh 6vw auto auto;
   text-align: end;
   max-width: 25%;
@@ -210,11 +278,11 @@ p {
   line-height: 200%;
   color: #5d6b6b;
 }
-.content .scroll .text_content {
+.content .wrapper .contents .scroll .text_content {
   width: 100%;
   height: 100%;
 }
-.content .scroll .text_content .title {
+.content .wrapper .contents .scroll .text_content .title {
   margin: 14vh 6vw auto auto;
   text-align: end;
   font-family: "Source Code Pro";
@@ -222,46 +290,46 @@ p {
   font-size: 6vh;
   color: #5d6b6b;
 }
-.content .scroll .text_content .text {
+.content .wrapper .contents .scroll .text_content .text {
   margin: 2vh 5vw auto auto;
   width: 42%;
   height: auto;
 }
-.content .scroll .text_content .text .line {
+.content .wrapper .contents .scroll .text_content .text .line {
   padding-top: 3vh;
   padding-bottom: 1vh;
   justify-content: space-between;
   display: flex;
 }
-.content .scroll .text_content .text .line .column {
+.content .wrapper .contents .scroll .text_content .text .line .column {
   width: 50%;
   font-family: "Source Code Pro";
   font-weight: 500;
   font-size: 4vh;
   text-align: end;
 }
-.content .scroll .text_content .text .line .price {
+.content .wrapper .contents .scroll .text_content .text .line .price {
   padding-left: 3.5vw;
   text-align: center;
 }
-.content .scroll .text_content .text .description {
+.content .wrapper .contents .scroll .text_content .text .description {
   text-align: end;
 }
-.content .scroll .text_content .text .border {
+.content .wrapper .contents .scroll .text_content .text .border {
   width: 100%;
   height: auto;
   border: 2px solid #5d6b6b;
   border-radius: 60px;
   display: none;
 }
-.content .scroll .container {
+.content .wrapper .contents .scroll .container {
   position: relative;
   width: 100%;
   height: 100%;
   display: flex;
   overflow: hidden;
 }
-.content .scroll .vdcard {
+.content .wrapper .contents .scroll .vdcard {
   top: 150px;
   position: absolute;
   background-size: contain;
@@ -271,7 +339,7 @@ p {
   width: 100%;
   z-index: 100;
 }
-.content .scroll .laptop {
+.content .wrapper .contents .scroll .laptop {
   top: 190px;
   position: absolute;
   background-size: contain;
@@ -281,7 +349,7 @@ p {
   width: 100%;
   z-index: 100;
 }
-.content .scroll .computer {
+.content .wrapper .contents .scroll .computer {
   top: 80px;
   position: absolute;
   background-size: contain;

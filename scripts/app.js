@@ -1,38 +1,6 @@
 var vh = window.innerHeight / 100;
 
 var vw = window.innerWidth / 100;
-
-var swiper = new Swiper('.swiper', {
-    slidesPerView: 4,
-    watchSlidesProgress: true,
-    rewind: true,
-    spaceBetween: vw*2,
-    grabCursor: true,
-    observer: true,
-    observeParents: true,
-    speed: 800,
-    keyboard: {
-        enabled: true
-    },
-    pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-    },
-    autoplay: {
-        delay: 3000,
-        disableOnInteraction: false,
-    },
-})
-
-let reviewList = gsap.utils.toArray('.review_text')
-
-reviewList.forEach(element => {
-    $clamp(element, {
-        clamp: 6,
-        useNativeClamp: true,
-    })
-});
-
 initMap();
 
 async function initMap() {

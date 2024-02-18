@@ -67,6 +67,9 @@
 					});
 					break;
 				case -200:
+					vdList.forEach((el)=>{
+						el.classList.add('unvisible')
+					});
 					laptopList.forEach((el)=>{
 						el.classList.remove('unvisible')
 					});
@@ -75,11 +78,17 @@
 					});
 					break;
 				case -300:
+					laptopList.forEach((el)=>{
+						el.classList.add('unvisible')
+					});
 					compList.forEach((el)=>{
 						el.classList.remove('unvisible')
 					});
 					break;
 				case -400:
+					compList.forEach((el)=>{
+						el.classList.add('unvisible')
+					});
 					mapWidget.classList.add('unvisible');
 					break;
 				case -500:
